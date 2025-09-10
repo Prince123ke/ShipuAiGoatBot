@@ -7,7 +7,7 @@ module.exports = {
  name: "gemini",
  aliases: ["g"],
  version: "1.2",
- author: "Chitron Bhattacharjee",
+ author: "jerry",
  countDown: 5,
  role: 0,
  shortDescription: {
@@ -37,7 +37,7 @@ module.exports = {
  if (err || !thinkingMsg?.messageID) return;
 
  const sendStyledReply = async (text) => {
- const styled = `╭────────────╮\n ▄ 🧠 𝗦𝗵𝗶𝗣𝘂 𝗔𝗜 𝘀𝗮𝗶𝗱:\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n\n${text}\n\n──────────────`;
+ const styled = `╭────────────╮\n ▄ :\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n\n${text}\n\n──────────────`;
  try {
  await api.unsendMessage(thinkingMsg.messageID);
  } catch {}
